@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bff Page</title>
+    <style>
+       
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #00c6ff, #0072ff);
+            color: #fff;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            margin-bottom: 20px;
+            animation: fadeInDown 2s ease;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 20px auto;
+            animation: fadeInUp 2s ease;
+        }
+
+        
+        .button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff;
+            background: linear-gradient(to right, #ff512f, #dd2476);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+        }
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            background: linear-gradient(to right, #dd2476, #ff512f);
+        }
+
+        
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the bestfriend Page</h1>
+    <p>
+        A best friend is not just a companion but a reflection of our truest selves.  
+        They laugh with us, cry with us, and stand beside us no matter the challenge.  
+        The bond of friendship is a treasure that grows stronger with time,  
+        filled with shared moments, endless trust, and unconditional love.
+    </p>
+    <button class="button" onclick="alert('Thanks for being my Bhai!')">Thanks for selecting this!</button>
+</body>
+</html>
